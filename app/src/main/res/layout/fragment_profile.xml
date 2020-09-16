@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/gender_small_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/gender"
+            android:textColor="#CFD2DF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_tv" />
+
+        <TextView
+            android:id="@+id/edit_gender_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/edit"
+            android:textColor="#FD8D6A"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/gender_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_small_tv" />
+
+        <TextView
+
+            android:id="@+id/gender_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/male"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_small_tv" />
+
+        <TextView
+            android:id="@+id/edit_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/edit"
+            android:textColor="#FD8D6A"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/location_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_small_tv" />
+
+        <TextView
+
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/cairo_egypt"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_small_tv" />
+
+        <TextView
+            android:id="@+id/location_small_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/location"
+            android:textColor="#CFD2DF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_tv" />
+
+        <TextView
+
+            android:id="@+id/email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/ahmed_gmail_com"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_small_tv" />
+
+        <TextView
+            android:id="@+id/email_small_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/email"
+            android:textColor="#CFD2DF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_name_tv" />
+
+        <TextView
+            android:id="@+id/edit_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:textColor="#FD8D6A"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/email_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_small_tv" />
+
+        <TextView
+            android:id="@+id/myprofile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my_profile"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logout_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/myprofile_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rounded_cv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myprofile_tv">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher_background" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/change_picture_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_change_picture"
+            app:layout_constraintBottom_toBottomOf="@+id/rounded_cv"
+            app:layout_constraintStart_toStartOf="@+id/rounded_cv"
+            app:layout_constraintTop_toTopOf="@+id/rounded_cv" />
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/ahmed_essam"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rounded_cv" />
+
+        <TextView
+            android:id="@+id/full_name_small_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/full_name"
+            android:textColor="#CFD2DF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_tv" />
+
+
+        <TextView
+
+            android:id="@+id/full_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/ahmed_essam"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_name_small_tv" />
+
+        <TextView
+            android:id="@+id/edit_full_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/edit"
+            android:textColor="#FD8D6A"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/full_name_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_name_small_tv" />
+
+        <Button
+            android:id="@+id/change_password_profile_btn"
+            style="@style/buttonStyle"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_blue_btn"
+            android:text="@string/change_password"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/remove_account_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_tv"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/remove_account_btn"
+            android:background="@drawable/rounded_red_btn"
+            android:text="@string/remove_account"
+            style="@style/buttonStyle"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/change_password_profile_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
