@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".VerificationFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/green_curved_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+
+                android:text="@string/confirmation_code"
+                style="@style/titleTextViewStyle"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/white_curved_bg"
+            android:padding="30dp">
+
+            <ImageView
+                android:layout_margin="30dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_intro_image"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verificaton"
+                android:layout_marginBottom="10dp"
+                android:textColor="#221F68"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insert_your_code_here"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_white_btn"
+                android:weightSum="2"
+                android:padding="10dp"
+                >
+
+
+                <com.example.userprofile.VerficationCodeEditText
+                    android:id="@+id/et_otp"
+                    android:layout_weight="1.75"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textIsSelectable="false"
+                    android:textSize="20sp"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/ic_cancel" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/verification_btn"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_blue_btn"
+                android:text="@string/Continue"
+                style="@style/buttonStyle"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/resend_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resent_code"
+                    android:textColor="#5C5DCE"
+                    android:textSize="15sp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/change_email_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_email"
+                    android:textColor="#5C5DCE"
+                    android:gravity="end"
+                    android:textSize="15sp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
