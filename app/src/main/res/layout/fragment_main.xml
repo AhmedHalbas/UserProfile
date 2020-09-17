@@ -1,79 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    >
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainFragment"
-    android:orientation="vertical"
-    android:background="@drawable/green_curved_bg"
-    android:weightSum="1">
-
-    <ImageView
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:src="@drawable/ic_intro_image"/>
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:background="@drawable/green_curved_bg"
         android:orientation="vertical"
-        android:background="@drawable/white_curved_bg"
-        android:padding="25dp">
+        android:weightSum="1"
+        tools:context=".MainFragment">
 
-
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome_to_our_app"
-            android:layout_marginBottom="10dp"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
-            android:text="@string/directing_user"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            />
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_intro_image" />
 
-        <Button
-            android:id="@+id/login_page_btn"
-            android:layout_marginBottom="20dp"
-            android:text="@string/log_in"
-            style="@style/buttonStyle"
-            android:background="@drawable/rounded_white_btn"
-            android:textColor="#56a4d7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/white_curved_bg"
+            android:orientation="vertical"
+            android:padding="25dp">
 
-        <Button
-            android:id="@+id/signup_page_btn"
-            android:background="@drawable/rounded_blue_btn"
-            android:text="@string/create_an_account"
-            android:textColor="#FFFFFF"
-            style="@style/buttonStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/welcome_to_our_app"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="@string/directing_user"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/login_page_btn"
+                style="@style/buttonStyle"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_white_btn"
+                android:text="@string/log_in"
+                android:textColor="#56a4d7" />
+
+            <Button
+                android:id="@+id/signup_page_btn"
+                style="@style/buttonStyle"
+                android:background="@drawable/rounded_blue_btn"
+                android:text="@string/create_an_account"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
-
-
-
-
-
-
-</LinearLayout>
 
 </ScrollView>

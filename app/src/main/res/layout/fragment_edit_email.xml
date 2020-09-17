@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_curved_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/edit_email"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/edit_email_et"
+            style="@style/editTextStyle"
+            android:layout_marginBottom="50dp"
+            android:hint="@string/please_enter_your_email"
+            android:inputType="textPersonName" />
+
+
+        <Button
+            android:id="@+id/edit_email_btn"
+            style="@style/buttonStyle"
+            android:background="@drawable/rounded_blue_btn"
+            android:text="@string/edit"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</ScrollView>

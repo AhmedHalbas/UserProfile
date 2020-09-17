@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_curved_bg"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/edit_address"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:text="@string/Country" />
+
+        <Spinner
+            android:id="@+id/country_spinner"
+            style="@style/SpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/Countries"
+            android:padding="10dp"
+            android:spinnerMode="dialog"
+            android:theme="@style/SpinnerTextColor" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_marginTop="20dp"
+            android:text="@string/City" />
+
+        <Spinner
+
+
+            android:id="@+id/city_spinner"
+            style="@style/SpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/Cities"
+            android:padding="10dp"
+            android:spinnerMode="dialog"
+            android:theme="@style/SpinnerTextColor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/map" />
+
+        <Button
+            android:id="@+id/edit_address_btn"
+            style="@style/buttonStyle"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_blue_btn"
+            android:text="@string/edit"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</ScrollView>

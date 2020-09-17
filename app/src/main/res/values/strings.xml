@@ -2,17 +2,10 @@
     <string name="app_name">User Profile</string>
     <string name="title_activity_login">LoginActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_to_our_app">Welcome to our app!</string>
     <string name="directing_user">This is the first version of user profile app. Please sign in or create an account below.</string>
     <string name="log_in">Log in</string>
@@ -50,6 +43,26 @@
     <string name="location">Location</string>
     <string name="cairo_egypt">Cairo, Egypt</string>
     <string name="remove_account">Remove Account</string>
+    <string name="edit_full_name">Edit Full Name</string>
+    <string name="edit_email">Edit Email Address</string>
+    <string name="edit_gender">Edit Gender</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="Country">Country</string>
+    <string name="City">City</string>
+    <string name="old_password">Old Password</string>
+    <string name="re_type_new_password">Re-type New Password</string>
+    <string name="edit_password">Edit Password</string>
+    <string name="edit_picture">Edit Picture</string>
+
+
+    <string-array name="Countries">
+        <item>Egypt</item>
+    </string-array>
+
+
+    <string-array name="Cities">
+        <item>Cairo</item>
+    </string-array>
 
 
 </resources>
