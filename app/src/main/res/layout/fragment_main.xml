@@ -11,7 +11,7 @@
         android:background="@drawable/green_curved_bg"
         android:orientation="vertical"
         android:weightSum="1"
-        tools:context=".MainFragment">
+        tools:context=".ui.authentication.MainFragment">
 
         <ImageView
             android:layout_width="match_parent"

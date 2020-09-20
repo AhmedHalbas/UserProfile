@@ -1,4 +1,4 @@
-package com.example.userprofile;
+package com.example.userprofile.ui.profile.settings;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
+
+import com.example.userprofile.R;
+import com.example.userprofile.util.MyDialogFragment;
 
 
 public class RemoveAccountFragment extends MyDialogFragment implements View.OnClickListener {

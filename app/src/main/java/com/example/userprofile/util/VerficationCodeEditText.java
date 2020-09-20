@@ -1,4 +1,4 @@
-package com.example.userprofile;
+package com.example.userprofile.util;
 
 import android.content.Context;
 import android.graphics.Canvas;

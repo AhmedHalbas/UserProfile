@@ -1,4 +1,4 @@
-package com.example.userprofile;
+package com.example.userprofile.ui.authentication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,13 +13,16 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-public class ResetPasswordFragment extends Fragment implements View.OnClickListener {
+import com.example.userprofile.R;
+
+
+public class RegisterFragment extends Fragment implements View.OnClickListener {
 
     private NavController navController;
-    private Button resetPasswordBtn;
+    private Button signupBtn;
     private ImageView backBtn;
 
-    public ResetPasswordFragment() {
+    public RegisterFragment() {
         // Required empty public constructor
     }
 
@@ -27,10 +30,10 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
-        resetPasswordBtn = view.findViewById(R.id.reset_password_btn);
+        signupBtn = view.findViewById(R.id.signup_btn);
         backBtn = view.findViewById(R.id.back_btn);
 
-        resetPasswordBtn.setOnClickListener(this);
+        signupBtn.setOnClickListener(this);
         backBtn.setOnClickListener(this);
 
 
@@ -40,20 +43,20 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_reset_password, container, false);
+        return inflater.inflate(R.layout.fragment_register, container, false);
     }
 
     @Override
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.reset_password_btn:
-                navController.navigate(R.id.action_resetPasswordFragment_to_verificationFragment);
+            case R.id.signup_btn:
+                navController.navigate(R.id.action_registerFragment_to_profileFragment);
                 break;
 
 
             case R.id.back_btn:
-                navController.navigate(R.id.action_resetPasswordFragment_to_loginFragment);
+                navController.navigate(R.id.action_registerFragment_to_mainFragment);
                 break;
 
         }

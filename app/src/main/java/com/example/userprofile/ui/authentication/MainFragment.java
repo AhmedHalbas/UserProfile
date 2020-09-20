@@ -1,4 +1,4 @@
-package com.example.userprofile;
+package com.example.userprofile.ui.authentication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+
+import com.example.userprofile.R;
 
 public class MainFragment extends Fragment implements View.OnClickListener {
 

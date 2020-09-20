@@ -1,4 +1,4 @@
-package com.example.userprofile;
+package com.example.userprofile.ui.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,13 +13,23 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.bumptech.glide.Glide;
+import com.example.userprofile.R;
+import com.example.userprofile.ui.profile.settings.EditAddressFragment;
+import com.example.userprofile.ui.profile.settings.EditEmailFragment;
+import com.example.userprofile.ui.profile.settings.EditFullNameFragment;
+import com.example.userprofile.ui.profile.settings.EditGenderFragment;
+import com.example.userprofile.ui.profile.settings.EditPasswordFragment;
+import com.example.userprofile.ui.profile.settings.EditPictureFragment;
+import com.example.userprofile.ui.profile.settings.RemoveAccountFragment;
+
 
 public class ProfileFragment extends Fragment implements View.OnClickListener {
 
     private NavController navController;
     private ImageView logOutBtn;
     private TextView editFullName, editEmail, editGender, editAddress, editPassword, removeAccount;
-    private ImageView editPicture;
+    private ImageView editPicture, profileImage;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -37,6 +47,12 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         editPassword = view.findViewById(R.id.change_password_profile_btn);
         removeAccount = view.findViewById(R.id.remove_account_btn);
         editPicture = view.findViewById(R.id.change_picture_iv);
+        profileImage = view.findViewById(R.id.profile_image);
+
+        Glide.with(getContext())
+                .load(R.drawable.image_test)
+                .circleCrop()
+                .into(profileImage);
 
 
         logOutBtn.setOnClickListener(this);

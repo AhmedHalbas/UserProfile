@@ -1,4 +1,4 @@
-package com.example.userprofile;
+package com.example.userprofile.ui.profile.settings;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import androidx.fragment.app.FragmentTransaction;
 import com.asksira.bsimagepicker.BSImagePicker;
 import com.asksira.bsimagepicker.Utils;
 import com.bumptech.glide.Glide;
+import com.example.userprofile.R;
+import com.example.userprofile.util.MyDialogFragment;
 
 
 public class EditPictureFragment extends MyDialogFragment implements BSImagePicker.OnSingleImageSelectedListener,

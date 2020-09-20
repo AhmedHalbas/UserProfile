@@ -1,4 +1,4 @@
-package com.example.userprofile;
+package com.example.userprofile.ui.profile.settings;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.userprofile.R;
+import com.example.userprofile.util.MyDialogFragment;
 
 
 public class EditEmailFragment extends MyDialogFragment implements View.OnClickListener {
