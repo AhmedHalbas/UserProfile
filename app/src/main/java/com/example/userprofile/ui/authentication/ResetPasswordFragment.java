@@ -55,7 +55,7 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
 
 
             case R.id.back_btn:
-                navController.navigate(R.id.action_resetPasswordFragment_to_loginFragment);
+                navController.popBackStack();
                 break;
 
         }

@@ -55,7 +55,7 @@ public class ChangePasswordFragment extends Fragment implements View.OnClickList
 
 
             case R.id.back_btn:
-                navController.navigate(R.id.action_changePasswordFragment_to_verificationFragment);
+                navController.popBackStack();
                 break;
 
         }

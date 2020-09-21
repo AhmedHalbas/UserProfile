@@ -58,12 +58,12 @@ public class VerificationFragment extends Fragment implements View.OnClickListen
                 break;
 
             case R.id.change_email_tv:
-                navController.navigate(R.id.action_verificationFragment_to_resetPasswordFragment);
+                navController.popBackStack();
                 break;
 
 
             case R.id.back_btn:
-                navController.navigate(R.id.action_verificationFragment_to_resetPasswordFragment);
+                navController.popBackStack();
                 break;
 
         }

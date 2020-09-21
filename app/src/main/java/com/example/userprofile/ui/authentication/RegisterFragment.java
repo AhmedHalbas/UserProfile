@@ -56,7 +56,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
 
 
             case R.id.back_btn:
-                navController.navigate(R.id.action_registerFragment_to_mainFragment);
+                navController.popBackStack();
                 break;
 
         }

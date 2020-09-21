@@ -50,12 +50,16 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         return inflater.inflate(R.layout.fragment_login, container, false);
     }
 
+
     @Override
     public void onClick(View view) {
 
         switch (view.getId()) {
             case R.id.login_btn:
+
                 navController.navigate(R.id.action_loginFragment_to_profileFragment);
+
+
                 break;
 
             case R.id.forgot_password_tv:
@@ -64,6 +68,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
             case R.id.back_btn:
                 navController.navigate(R.id.action_loginFragment_to_mainFragment);
+
+
                 break;
 
         }
