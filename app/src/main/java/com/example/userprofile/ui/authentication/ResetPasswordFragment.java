@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,7 +18,7 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
 
     private NavController navController;
     private Button resetPasswordBtn;
-    private ImageView backBtn;
+
 
     public ResetPasswordFragment() {
         // Required empty public constructor
@@ -30,10 +29,9 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
         resetPasswordBtn = view.findViewById(R.id.reset_password_btn);
-        backBtn = view.findViewById(R.id.back_btn);
+
 
         resetPasswordBtn.setOnClickListener(this);
-        backBtn.setOnClickListener(this);
 
 
     }
@@ -54,9 +52,6 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
                 break;
 
 
-            case R.id.back_btn:
-                navController.popBackStack();
-                break;
 
         }
 

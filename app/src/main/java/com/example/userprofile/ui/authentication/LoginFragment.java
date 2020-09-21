@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,7 +20,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
     private NavController navController;
     private Button loginBtn;
-    private ImageView backBtn;
     private TextView forgotPasswordtv;
 
     public LoginFragment() {
@@ -33,11 +31,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
         loginBtn = view.findViewById(R.id.login_btn);
-        backBtn = view.findViewById(R.id.back_btn);
         forgotPasswordtv = view.findViewById(R.id.forgot_password_tv);
 
         loginBtn.setOnClickListener(this);
-        backBtn.setOnClickListener(this);
         forgotPasswordtv.setOnClickListener(this);
 
 
@@ -66,11 +62,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                 navController.navigate(R.id.action_loginFragment_to_resetPasswordFragment);
                 break;
 
-            case R.id.back_btn:
-                navController.navigate(R.id.action_loginFragment_to_mainFragment);
-
-
-                break;
 
         }
 

@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <Button
@@ -40,14 +41,25 @@
             style="@style/textViewStyle"
             android:text="@string/password" />
 
-        <EditText
-            android:id="@+id/remove_account_password_et"
-            style="@style/editTextStyle"
-            android:layout_marginBottom="20dp"
-            android:hint="@string/please_enter_your_password"
-            android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
 
-        <Button
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/editTextStyle"
+                    android:id="@+id/remove_account_password_et"
+                    android:layout_marginBottom="20dp"
+                    android:hint="@string/please_enter_your_password"
+                    android:inputType="textPassword"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
             android:id="@+id/remove_account_btn"
             style="@style/buttonStyle"
             android:layout_marginTop="40dp"

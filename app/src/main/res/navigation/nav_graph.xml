@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.userprofile.ui.authentication.MainFragment"
-        android:label="fragment_main"
+        android:label="Home"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
@@ -28,7 +28,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.userprofile.ui.authentication.LoginFragment"
-        android:label="fragment_login"
+        android:label="Login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_profileFragment"
@@ -56,7 +56,7 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.userprofile.ui.authentication.RegisterFragment"
-        android:label="fragment_register"
+        android:label="Register"
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/action_registerFragment_to_profileFragment"
@@ -72,7 +72,7 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.userprofile.ui.profile.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_profileFragment_to_loginFragment"
@@ -86,7 +86,7 @@
     <fragment
         android:id="@+id/resetPasswordFragment"
         android:name="com.example.userprofile.ui.authentication.ResetPasswordFragment"
-        android:label="fragment_reset_password"
+        android:label="Reset Password"
         tools:layout="@layout/fragment_reset_password" >
         <action
             android:id="@+id/action_resetPasswordFragment_to_verificationFragment"
@@ -99,7 +99,7 @@
     <fragment
         android:id="@+id/verificationFragment"
         android:name="com.example.userprofile.ui.authentication.VerificationFragment"
-        android:label="fragment_verification"
+        android:label="Verification"
         tools:layout="@layout/fragment_verification" >
         <action
             android:id="@+id/action_verificationFragment_to_changePasswordFragment"
@@ -112,7 +112,7 @@
     <fragment
         android:id="@+id/changePasswordFragment"
         android:name="com.example.userprofile.ui.authentication.ChangePasswordFragment"
-        android:label="fragment_change_password"
+        android:label="Change Password"
         tools:layout="@layout/fragment_change_password" >
         <action
             android:id="@+id/action_changePasswordFragment_to_profileFragment"

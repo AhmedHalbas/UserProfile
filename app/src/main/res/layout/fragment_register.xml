@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context=".ui.authentication.RegisterFragment">
 
@@ -10,7 +11,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/green_curved_bg"
+        android:background="@color/green_bg"
         android:orientation="vertical">
 
         <ImageView
@@ -24,25 +25,13 @@
             android:src="@drawable/capture" />
 
 
-        <LinearLayout
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="30dp">
+            android:layout_height="150dp"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/back_btn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/ic_back" />
 
-            <TextView
-
-                style="@style/titleTextViewStyle"
-                android:text="@string/register_new_account" />
-
-        </LinearLayout>
+        </Space>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,8 +46,7 @@
                 android:text="@string/full_name" />
 
             <EditText
-
-
+                android:id="@+id/register_full_name_et"
                 style="@style/editTextStyle"
                 android:hint="@string/please_enter_your_full_name"
                 android:inputType="textPersonName" />
@@ -70,7 +58,7 @@
                 android:text="Email" />
 
             <EditText
-
+                android:id="@+id/register_email_et"
                 style="@style/editTextStyle"
                 android:hint="@string/please_enter_your_email"
                 android:inputType="textEmailAddress" />
@@ -85,11 +73,22 @@
 
                 />
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
 
-                style="@style/editTextStyle"
-                android:hint="@string/please_enter_your_password"
-                android:inputType="textPassword" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_password_et"
+                    style="@style/editTextStyle"
+                    android:hint="@string/please_enter_your_password"
+                    android:inputType="textPassword"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
 
@@ -99,11 +98,22 @@
 
                 />
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
 
-                style="@style/editTextStyle"
-                android:hint="@string/please_enter_your_password"
-                android:inputType="textPassword" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_re_password_et"
+                    style="@style/editTextStyle"
+                    android:hint="@string/please_enter_your_password"
+                    android:inputType="textPassword"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
             <TextView
@@ -114,35 +124,41 @@
 
                 />
 
-            <LinearLayout
+            <RadioGroup
+                android:layout_marginBottom="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_below="@+id/gender_radio_group"
+                android:weightSum="2"
                 android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:weightSum="2">
+                android:id="@+id/radioGroup">
 
-                <Button
+                <RadioButton
+                    android:id="@+id/gender_male_btn"
                     android:layout_width="0dp"
+                    android:button="@null"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rounded_green_btn"
+                    android:background="@drawable/male_button_selector"
                     android:text="@string/male"
-                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:textAlignment="center"
                     android:textColor="#FFFFFF" />
 
-                <Button
+                <RadioButton
+                    android:button="@null"
+                    android:id="@+id/gender_female_btn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
                     android:layout_weight="1"
-                    android:background="@drawable/rounded_grey_btn"
+                    android:background="@drawable/female_button_selector"
                     android:text="@string/female"
-                    android:textAllCaps="false"
                     android:textColor="#FFFFFF" />
-
-            </LinearLayout>
+            </RadioGroup>
 
             <Button
                 android:id="@+id/signup_btn"

@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +19,6 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
 
     private NavController navController;
     private Button signupBtn;
-    private ImageView backBtn;
 
     public RegisterFragment() {
         // Required empty public constructor
@@ -31,10 +29,9 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
         signupBtn = view.findViewById(R.id.signup_btn);
-        backBtn = view.findViewById(R.id.back_btn);
+
 
         signupBtn.setOnClickListener(this);
-        backBtn.setOnClickListener(this);
 
 
     }
@@ -55,9 +52,6 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
                 break;
 
 
-            case R.id.back_btn:
-                navController.popBackStack();
-                break;
 
         }
 

@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/green_curved_bg"
+        android:background="@color/green_bg"
         android:orientation="vertical"
         android:weightSum="1"
         tools:context=".ui.authentication.MainFragment">
